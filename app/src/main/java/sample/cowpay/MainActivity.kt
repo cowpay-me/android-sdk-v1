@@ -17,9 +17,9 @@ class MainActivity : AppCompatActivity() {
 
     /**
      * Test card data
-     * card number: 4005550000000001
+     * card number: 5123456789012346
      * month : 05
-     * year : 21
+     * year : 25
      * exp : 123
      */
     lateinit var binding: ActivityMainBinding
@@ -58,7 +58,7 @@ class MainActivity : AppCompatActivity() {
 //    var authorizationToken = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjZkODE5ZTM0ZGUyOTQ1ZWMwNzllNDAzYTQ1MjQyYjM2YTczMTk5MTMyYmFjZWE4OWIzYTUwYTVmZDM0YjYxZDA4ZTJhOGY2ZmY2MWNiNzI2In0.eyJhdWQiOiIzIiwianRpIjoiNmQ4MTllMzRkZTI5NDVlYzA3OWU0MDNhNDUyNDJiMzZhNzMxOTkxMzJiYWNlYTg5YjNhNTBhNWZkMzRiNjFkMDhlMmE4ZjZmZjYxY2I3MjYiLCJpYXQiOjE2MDA1MzA1MzYsIm5iZiI6MTYwMDUzMDUzNiwiZXhwIjoxNjMyMDY2NTM2LCJzdWIiOiIxNyIsInNjb3BlcyI6W119.eMjvz3w7FP5eTBRP4NY6bfax4pu4GFTGDhbX6oATz-avlzTXAxBQkL7Rb3XDvgcxLULXHlS7frhIORA095MfLQ"
     //stage auth
     var authorizationToken =
-        "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImY0NDdlN2NjM2NhM2U4OGNlOTYyM2U5ZjMyY2MzYjYzZmY4N2NlZDY3YzI1N2Q3MTBlMjMxZDBiNTYxMjg0OTg2Zjg1YzdiMGM2ZmNiMzA2In0.eyJhdWQiOiIxIiwianRpIjoiZjQ0N2U3Y2MzY2EzZTg4Y2U5NjIzZTlmMzJjYzNiNjNmZjg3Y2VkNjdjMjU3ZDcxMGUyMzFkMGI1NjEyODQ5ODZmODVjN2IwYzZmY2IzMDYiLCJpYXQiOjE2MDA0ODg3NDMsIm5iZiI6MTYwMDQ4ODc0MywiZXhwIjoxNjMyMDI0NzQzLCJzdWIiOiIxNyIsInNjb3BlcyI6W119.rHN1xpTrLVodgX60Xf_O1yAyyEOxcvRgTdD2lJxmEEefklIHVLBlaC-BihtXcZobsyyJKXsqbovczRGScWf5sw"
+        "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMDljMGY3NDYxODZjMDBlYTU2YmUyMGRkNTQ5Mzc3ZjgyZTZlYmQ4NzBjZWJlNjYzOGMzODFlM2ZjYjE4OTZlNWNhYjY4NDllYzM0ZThiYzciLCJpYXQiOiIxNjI4NTQwNDkzLjcyMTQ4OCIsIm5iZiI6IjE2Mjg1NDA0OTMuNzIxNDk0IiwiZXhwIjoiMTY2MDA3NjQ5My43MDk0NzEiLCJzdWIiOiIxNyIsInNjb3BlcyI6W119.CSRzKNQ-rQ8PvO_ZQUO6d533P0YVInv9X86fMQBKqEMf_Lcsp1jSuVpW5Yzz9RGhU2Sozjby-QwNp8NhdtmTag"
 
     //dev auth
 //    var authorizationToken = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImYzZTc2M2ZlMzUyZGU1ZmViYzNhMzYxZTlkZTg0ZmQzOTUxN2QzZWQzYWRjYjJjOWY4Nzg2ZTMyYTM3OWMxZTQwNDE1YjEwYTk4ZmI4ZGRkIn0.eyJhdWQiOiI1IiwianRpIjoiZjNlNzYzZmUzNTJkZTVmZWJjM2EzNjFlOWRlODRmZDM5NTE3ZDNlZDNhZGNiMmM5Zjg3ODZlMzJhMzc5YzFlNDA0MTViMTBhOThmYjhkZGQiLCJpYXQiOjE2MDAxNjM0MTAsIm5iZiI6MTYwMDE2MzQxMCwiZXhwIjoxNjMxNjk5NDEwLCJzdWIiOiIxNyIsInNjb3BlcyI6W119.F_TF0ztB58x_d0xrVvAI1Sv116X_3WeZa3nKzgEglXTea6ofnUCIa-KT-KHQkb7u0n_sqJNz-ClzDBi-dshbCQ"
@@ -106,7 +106,7 @@ class MainActivity : AppCompatActivity() {
         intent.putExtra(CowpayConstantKeys.CustomerName, "John Smith")
         intent.putExtra(CowpayConstantKeys.CustomerMobile, "01234567890")
         intent.putExtra(CowpayConstantKeys.CustomerEmail, "customer@customer.com")
-        intent.putExtra(CowpayConstantKeys.Description, "example description")
+        intent.putExtra(CowpayConstantKeys.Description, "example description - android sdk")
         //user id
         intent.putExtra(CowpayConstantKeys.CustomerMerchantProfileId, "15")
         startActivityForResult(intent, CowpayConstantKeys.PaymentMethodsActivityRequestCode)

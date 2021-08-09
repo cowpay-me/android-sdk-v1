@@ -351,7 +351,7 @@ class CreditCardActivity : CowPayBaseActivity(
             params.addFormDataPart("amount", getAmountInDecimalFormat())
             params.addFormDataPart("currency_code", "EGP")
 
-            params.addFormDataPart("description", "example description")
+            params.addFormDataPart("description", Description)
             params.addFormDataPart("signature", getSignature())
             params.addFormDataPart(
                 "save_card",
