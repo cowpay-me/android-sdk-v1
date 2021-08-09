@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gold"
+            android:padding="20dp">
+
+        <ImageView
+                android:id="@+id/iv_backFawryActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:background="@drawable/layout_bg_transparent_gray_selector_with_bg_transparent"
+                android:src="@drawable/back_black_icon"/>
+
+        <ImageView
+                android:id="@+id/iv_logoFawryActivity"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/farwy_big_logo"
+                android:adjustViewBounds="true"
+                android:layout_centerHorizontal="true"/>
+
+        <LinearLayout
+                android:id="@+id/layout_paweredFawryActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/powered_by"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/sealbrown"
+                    android:fontFamily="@font/the_northern_block_acrom_medium"
+                    android:textSize="10dp"/>
+
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/logo_black_icon"
+                       android:layout_marginStart="12dp"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+                android:id="@+id/layout_containerFawryActivity"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/iv_logoFawryActivity"
+                android:layout_marginBottom="10dp"
+                android:layout_above="@id/layout_paweredFawryActivity">
+
+            <LinearLayout
+                    android:id="@+id/layout_loadingFawryActivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                <ProgressBar
+                        android:id="@+id/prLoadingIndicator_containerFawryActivity"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:visibility="visible"
+                        android:layout_gravity="center_horizontal"
+                        android:indeterminateDrawable="@drawable/custom_white_progress"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/please_wait"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="25dp"
+                        android:fontFamily="@font/the_northern_block_acrom_medium"
+                        android:textSize="14dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/layout_ErrorFawryActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                <ImageView android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:src="@drawable/error_white_rect_icon"
+                           android:adjustViewBounds="true"/>
+                <TextView
+                        android:id="@+id/tvErrorFawryActivity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/server_connection_failed"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/darkcoral"
+                        android:layout_marginTop="25dp"
+                        android:fontFamily="@font/the_northern_block_acrom_bold"
+                        android:textSize="16dp"/>
+
+                <LinearLayout
+                        android:id="@+id/layout_RetryFawryActivity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:gravity="center"
+                        android:padding="15dp"
+                        android:background="@drawable/round_corner_transparent_with_dark_red_strok_transparent_gray_selector"
+                        android:orientation="horizontal">
+
+                    <ImageView android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:src="@drawable/arrow_repeat_red_icon"/>
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/try_again"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/darkcoral"
+                            android:layout_marginStart="10dp"
+                            android:fontFamily="@font/the_northern_block_acrom_bold"
+                            android:textSize="16dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                    android:id="@+id/layout_FinishFawryActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                <TextView
+                        android:id="@+id/btn_FinishFawryActivity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/finish"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:padding="15dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_alignParentBottom="true"
+                        android:fontFamily="@font/the_northern_block_acrom_bold"
+                        android:background="@drawable/round_corner_sealbrown_selector"
+                        android:textSize="14dp"/>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:layout_centerInParent="true"
+                        android:layout_above="@id/btn_FinishFawryActivity"
+                        android:background="@drawable/triangle_rect_white_icon"
+                        android:orientation="vertical">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/you_can_pay_the_required_amount"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/davygrey"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="@font/the_northern_block_acrom_medium"
+                            android:textSize="12dp"/>
+
+                    <LinearLayout android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:orientation="horizontal"
+                                  android:layout_gravity="center_horizontal">
+                        <TextView
+                                android:id="@+id/tvAmount_FawryActivity"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="666"
+                                android:textColor="@color/davygrey"
+                                android:layout_gravity="bottom"
+                                android:fontFamily="@font/the_northern_block_acrom_medium"
+                                android:textSize="42dp"/>
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/l_e"
+                                android:layout_gravity="bottom"
+                                android:textColor="@color/darkgray"
+                                android:layout_marginStart="5dp"
+                                android:fontFamily="@font/the_northern_block_acrom_medium"
+                                android:textSize="18dp"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/through_fawry_machine_invoice_number"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/davygrey"
+                            android:layout_marginTop="45dp"
+                            android:fontFamily="@font/the_northern_block_acrom_medium"
+                            android:textSize="12dp"/>
+
+                    <TextView
+                            android:id="@+id/tvFawryCode_FawryActivity"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="236 5733 6576 23"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/davygrey"
+                            android:layout_marginTop="14dp"
+                            android:padding="9dp"
+                            android:gravity="center"
+                            android:background="@color/munsell"
+                            android:fontFamily="@font/the_northern_block_acrom_medium"
+                            android:textSize="24dp"/>
+
+                    <TextView
+                            android:id="@+id/tvCopyCode_FawryActivity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/copy_this_number_to_use_it_while_paying"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/davygrey"
+                            android:layout_marginTop="10dp"
+                            android:drawablePadding="8dp"
+                            android:layout_marginBottom="20dp"
+                            android:background="@drawable/layout_bg_transparent_gray_selector_with_bg_transparent"
+                            android:drawableStart="@drawable/information_gray_icon"
+                            android:fontFamily="@font/the_northern_block_acrom_medium"
+                            android:textSize="12dp"/>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</layout>

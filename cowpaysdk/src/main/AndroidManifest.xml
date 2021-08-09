@@ -1,0 +1,81 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="me.cowpay"
+          xmlns:dist="http://schemas.android.com/apk/distribution"
+          xmlns:tools="http://schemas.android.com/tools">
+
+    <dist:module dist:instant="true"/>
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <!-- Required OpenGL ES 2.0. for Maps V2 -->
+    <uses-feature
+            android:glEsVersion="0x00020000"
+            android:required="false"/>
+    <uses-feature
+            android:name="android.hardware.location"
+            android:required="true"/>
+    <uses-feature
+            android:name="android.hardware.location.network"
+            android:required="true"/>
+    <uses-feature
+            android:name="android.hardware.wifi"
+            android:required="false"/>
+    <uses-feature
+            android:name="android.hardware.location.gps"
+            android:required="true"/>
+    <uses-feature
+            android:name="android.hardware.screen.PORTRAIT"
+            android:required="false"/>
+
+    <supports-screens
+            android:anyDensity="true"
+            android:largeScreens="true"
+            android:normalScreens="true"
+            android:resizeable="true"
+            android:smallScreens="true"
+            android:xlargeScreens="true"/>
+
+    <application
+            android:name=".MyApplication"
+            android:allowBackup="true"
+            android:label="@string/app_name"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme"
+            android:hardwareAccelerated="true"
+            android:usesCleartextTraffic="true"
+            android:largeHeap="true">
+
+        <activity android:name=".PaymentMethodsActivity"
+                  android:configChanges="keyboard|keyboardHidden|orientation|screenSize|locale|layoutDirection"
+                  android:hardwareAccelerated="true"
+                  android:label="@string/app_name"
+                  android:launchMode="singleTop"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/AppTheme.NoActionBar.LightScreen"/>
+
+        <activity android:name=".CreditCardActivity"
+                  android:configChanges="keyboard|keyboardHidden|orientation|screenSize|locale|layoutDirection"
+                  android:hardwareAccelerated="true"
+                  android:label="@string/app_name"
+                  android:launchMode="singleTop"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/AppTheme.NoActionBar.LightScreen"/>
+        <activity android:name=".ThreeDSecureActivity"
+                android:configChanges="keyboard|keyboardHidden|orientation|screenSize|locale|layoutDirection"
+                android:hardwareAccelerated="true"
+                android:label="@string/app_name"
+                android:launchMode="singleTop"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar.LightScreen"/>
+
+        <activity android:name=".FawryActivity"
+                  android:configChanges="keyboard|keyboardHidden|orientation|screenSize|locale|layoutDirection"
+                  android:hardwareAccelerated="true"
+                  android:label="@string/app_name"
+                  android:launchMode="singleTop"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/AppTheme.NoActionBar.LightScreen"/>
+    </application>
+</manifest>

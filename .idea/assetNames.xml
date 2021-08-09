@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="assetNames">
+    <option name="mapping">
+      <map>
+        <entry key="accepted_vector" value="accepted_icon" />
+        <entry key="arrow_left___347_" value="back_black_icon" />
+        <entry key="arrow_repeat___236_" value="arrow_repeat_red_icon" />
+        <entry key="close___1511_" value="close_black_icon" />
+        <entry key="group" value="error_white_rect_icon" />
+        <entry key="group_2" value="credit_icon" />
+        <entry key="group_2_copy" value="fawry_icon" />
+        <entry key="group_3" value="triangle_rect_white_icon" />
+        <entry key="information___1446_" value="information_gray_icon" />
+        <entry key="logo" value="logo_black_icon" />
+        <entry key="worng_vector" value="worng_icon" />
+      </map>
+    </option>
+  </component>
+</project>

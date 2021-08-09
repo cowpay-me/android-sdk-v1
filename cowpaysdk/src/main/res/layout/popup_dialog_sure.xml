@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_bg_with_shadow_small_blur"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+        <TextView
+            android:id="@+id/txtview_dialog_sure_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/the_northern_block_acrom_bold"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/app_name"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/txtview_dialog_sure_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:fontFamily="@font/the_northern_block_acrom_medium"
+            android:padding="10dp"
+            android:text="@string/app_name"
+            android:includeFontPadding="false"
+            android:textColor="@color/aurometalsaurus"
+            android:textSize="16dp"
+            android:textStyle="normal" />
+
+        <LinearLayout
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:gravity="end">
+
+            <Button
+                android:id="@+id/btn_dialog_sure_cancel"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layout_bg_transparent_gray_selector_with_bg_transparent"
+                android:fontFamily="@font/the_northern_block_acrom_bold"
+                android:padding="15dp"
+                android:text="@string/cancel"
+                android:textAllCaps="false"
+                android:includeFontPadding="false"
+                android:textColor="@color/ashgrey"
+                android:textSize="14dp" />
+
+            <Button
+                android:id="@+id/btn_dialog_sure_ok"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/layout_bg_transparent_gray_selector_with_bg_transparent"
+                android:fontFamily="@font/the_northern_block_acrom_bold"
+                android:padding="15dp"
+                android:includeFontPadding="false"
+                android:text="@string/ok"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>
